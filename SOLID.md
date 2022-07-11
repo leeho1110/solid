@@ -65,4 +65,3 @@ SOLID란 무엇이고 왜 필요한 것일까?
 
 - [https://youtu.be/HIWJ8sF8lO8](https://youtu.be/HIWJ8sF8lO8)
 - [https://howtodoinjava.com/best-practices/solid-principles/](https://howtodoinjava.com/best-practices/solid-principles/)
-- (https://www.youtube.com/watch?v=AdANHDp5dTM&list=PLeQ0NTYUDTmMM71Jn1scbEYdLFHz5ZqFA&index=15)
