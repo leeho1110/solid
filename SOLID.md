@@ -1,11 +1,5 @@
 # SOLID
 
-링크: https://www.youtube.com/watch?v=HIWJ8sF8lO8&list=PLeQ0NTYUDTmMM71Jn1scbEYdLFHz5ZqFA&index=14
-상태: 오늘은 무엇을 할까
-유형: 작업 🔨
-최종 편집일자: 2022년 7월 9일 오후 11:52
-카테고리: OOP
-
 ### 개요
 
 SOLID란 무엇이고 왜 필요한 것일까?
@@ -71,3 +65,4 @@ SOLID란 무엇이고 왜 필요한 것일까?
 
 - [https://youtu.be/HIWJ8sF8lO8](https://youtu.be/HIWJ8sF8lO8)
 - [https://howtodoinjava.com/best-practices/solid-principles/](https://howtodoinjava.com/best-practices/solid-principles/)
+- (https://www.youtube.com/watch?v=AdANHDp5dTM&list=PLeQ0NTYUDTmMM71Jn1scbEYdLFHz5ZqFA&index=15)
