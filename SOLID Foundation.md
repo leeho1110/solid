@@ -1,4 +1,8 @@
-# SOLID
+# SOLID Foundation
+
+링크: https://www.youtube.com/watch?v=HIWJ8sF8lO8&list=PLeQ0NTYUDTmMM71Jn1scbEYdLFHz5ZqFA&index=14
+유형: 작업 🔨
+카테고리: OOP
 
 ### 개요
 
@@ -129,18 +133,18 @@ public void copy(){
         - 위의 1번 예시를 보면 하이 레벨인 copy() 메서드가 로우 레벨인 Printer, KeyBoard에 직접 의존하고 있는 것을 볼 수 있다.
         - 아래는 1번에서의 객체 의존성 관계다.
             
-            <p align="center"><img src="img/solid-foundation-procedural1.png"</p>
+            <p align="center"><img src="img/solid-foundation-procedural1.png"></p>
             
     - 여기서 장치의 갯수가 증가하면 Fan-out 문제가 발생한다.
         - copy는 장치가 추가될 때마다 의존하는 로우 레벨의 개수가 늘어나게 되고, 이 중 하나만 변경되더라도 영향을 받게 된다.
         - 이렇게 계속 의존성이 늘어나는 것을 fan-out 문제라고 한다.
         
-            <p align="center"><img src="img/solid-foundation-procedural2.png"</p>
+        <p align="center"><img src="img/solid-foundation-procedural2.png"></p>
         
 2. **OOP**
     - 반면 OOP는 하이 레벨이 로우 레벨 디테일에 의존하지 않는다.
         
-            <p align="center"><img src="img/solid-foundation-oop2.png"</p>
+        <p align="center"><img src="img/solid-foundation-oop2.png"></p>
         
     - copy는 getChar, putChar 메서드를 갖는 File 인터페이스에 의존하지만, 이를 구현한 드라이버 클래스가 프린터가 될지 키보드가 될지 copy에서는 알 수가 없다.
     - 인터페이스를 통해 의존성을 끊어낼 수 있으며, 의존성의 방향이 **로우 레벨에서 하이 레벨로 향하는 의존성의 역전**이 일어난다.
@@ -157,8 +161,6 @@ public void copy(){
 객체는 메시지가 누구한테 전달될 것인지 어떻게 세부적으로 동작하는지는 전혀 모른채 ‘그저’ 메시지를 전달한다. 인터페이스를 통해 내가 원하는 바대로 동작할 것이라고 믿고 무엇을 원하는지만 보내는 것이다. 이를 우린 **Dynamic polymorphism** 라고 부른다. 이것이 가능한 이유는 인터페이스를 통해 로우 레벨과 하이 레벨간의 의존성을 역전시키는 **Dependeny Inversion**를 구현했기 때문이다.
 
 객체지향의 특성에서 언급되는 캡슐화, 추상화, 상속은 객체지향의 ‘메커니즘’일 뿐이다. 객체지향의 핵심은 Dependeny Inversion를 통해 IoC 구조를 만들고, High Level Policy와 Row Level Detail을 절연시켜 상위 레벨의 모듈을 하위 레벨의 모듈로부터 보호하는 것이다. 종합해보자면 객체지향 디자인은 ‘**의존성을 잘 관리하는 것**’이며, 이를 위해 지켜져야 하는 원칙이 바로 SOLID다.
-
----
 
 ### *Ref*
 
