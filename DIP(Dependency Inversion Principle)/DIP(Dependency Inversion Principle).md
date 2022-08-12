@@ -1,0 +1,25 @@
+# DIP(Dependency Inversion Principle)
+
+- inversion 여부를 떠나 핵심은 High Level Policy should not depend on Low Level Details
+    - 상위 모듈의 정책(비즈니스 로직)은 하위 모듈의 구현에 의존해서는 안된다
+    - 둘 모두 Abstract type(Interface)에 의존해야 한다
+- 객체지향이 뭘까요? 물어보면 상속, 캡슐화, 다형성, 상속에 의한 재사용 등 많이 나온다
+    - 하지만 이것들은 객체지향의 메커니즘이다
+    - 핵심은 **IoC를 통해 상위 레벨의 모듈을 하위 레벨의 모듈로부터 보호하는 것**이다
+        - 하위 레벨의 모듈은 빈번한 변경이 발생하기에
+    - 이를 통해 OCP를 자연스럽게 지킬 수 있음
+        - SOLID는 서로 연관되어있다
+    - 객체지향 디자인은 결국 의존성을 잘 관리하기 위한 것이다
+- Structured Design vs DIP
+    - Structured Design
+        - Top-down
+        - 컴파일 타임의 의존성과 런타임 의존성의 방향이 같다
+    - DIP
+        - 컴파일 타임과 동일하게 흐르던 런타임 의존성을 의존성 주입을 통해  반대로 역전
+    - 이를 Plugin Architecture이라고 한다.
+        - 시스템이 사용하는 변경 가능한 요소들을 Plugin이라고 부름
+        - 그리고 이를 바꿔낄 수 있도록 하는 아키텍쳐를 말한다
+        - 여기서 어떤 플러그인의 방향을 역전시킬 지 정해야한다.
+- OCP와 DIP는 의도가 다르다.
+    - OCP의 의도는 확장이 필요한 영역을 abstraction
+    - DIP는 low level에 의존성을 갖는 영역을 abstraction
